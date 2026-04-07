@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="pokedex">
+        <section class="busca">
+            <input type="text" id="pokemon-input" placeholder="Nome ou ID do Pokémon" required>
+            <button id="btnbuscar">Buscar</button>
+        </section>
+
+        <section id="resultado" class="cartao oculto">
+            <img id="pokemon-imagem" src="" alt="Sprite do Pokémon">
+            <h2 id="pokemon-nome"></h2>
+            <div id="pokemon-tipos"></div>
+        </section>
+
+        <div id="mensagemErro" class="erro oculto">
+            Pokémon não encontrado! ❌
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Reset básico para garantir que tudo se comporte igual em qualquer navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://conteudo.imguol.com.br/c/entretenimento/ef/2018/11/09/pokemon-1541760671236_v2_1280x720.jpg'); 
+    background-size: cover;           
+    background-position: center;      
+    background-attachment: fixed;   
+    background-repeat: no-repeat;    
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.pokedex {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#pokemon-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#pokemon-input:focus {
+    border-color: #ff1c1c; 
+}
+
+#btnbuscar {
+    padding: 12px 20px;
+    background-color: #ff1c1c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#btnbuscar:hover {
+    background-color: #cc0000;
+}
+
+/* Cartão de Resultado */
+.cartao {
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+#pokemon-imagem {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+}
+
+#pokemon-nome {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #222;
+}
+
+/* Tags de Tipo  */
+#pokemon-tipos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tipo-tag {
+    background-color: #444;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Mensagens de Erro */
+.erro {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+
+.oculto {
+    display: none !important;
+}
+
